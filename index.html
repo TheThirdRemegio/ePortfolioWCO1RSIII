@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Remegio Sagarino III">
+  <title>ePortfolio - Sagarino III</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,700;1,700&family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+
+  <script src="./js/nav.js" defer></script>
+  <script src="./js/parallax.js" defer></script>
+</head>
+<body>
+  <header>
+    <div>
+      <img id="header-logo" src="./assets/images/dark-logo-transparent.png" alt="Dark version of the website logo with lettering.">
+    </div>
+    <div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#works">Deliverables</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <video class="video-bg parallax-bg" autoplay muted loop>
+        <source src="assets/videos/video1.mp4" type="video/mp4">
+      </video>
+
+      <div>
+        <p>Hi, I am</p>
+        <h1>Remegio Sagarino III</h1>
+        <h2>Clinical Systems Technician</h2>
+        <p class="quote">My most powerful script is the one I decided to write for myself.</p>
+      </div>
+    </section>
+    <section id="about">
+      <div id="front-picture">
+        <img src="assets/images/standing-dost.jpeg" alt="A picture of Rem at the DOST Gala 2024.">
+      </div>
+      <div id="about-text">
+        <h2>Meet <span class="text-emphasis">Rem</span>,</h2>
+        <p>
+          A
+          <button onclick="swapRole(this)">scientist</button>
+          who bridges clinical workflows and data informatics, ensuring the right data reaches the right doctor at the right time—clearly, accurately, and quickly.</p>
+        <p>
+          He <span class="text-yellow">builds</span>, <span class="text-yellow">maintains</span>, and <span class="text-yellow">troubleshoots</span>
+          <span class="text-yellow-light">medical technologies and systems</span> that support clinical decision-making. His background includes
+          <i>automating genomic parsing</i> and <i>strengthening data validation</i> using <b><u>Python</u></b>
+          <span>
+            <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python icon from icons8.">
+          </span>
+          and <b><u>SQL</u></b>
+          <span>
+            <img src="https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000" alt="SQL icon from icons8.">
+          </span>
+          , improving the integrity and efficiency of Laboratory Information
+          Systems (LIS).
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="parallax-bg">
+      <div id="education-card" class="card">
+        <h2>Education</h2>
+        <div class="card-block">
+          <h3>Bachelor of Science in Biology</h3>
+          <p>Caraga State University - Main Campus</p>
+          <p>2024</p>
+        </div>
+        <div class="card-block">
+          <h3>
+            Advanced Programming &<br>
+            Introduction to Databases
+          </h3>
+          <p>University of Helsinki (<a href="https://www.mooc.fi/en/" target="_blank">MOOC.fi</a>)</p>
+          <p>2024</p>
+        </div>
+      </div>
+      <div class="card">
+        <div id="experience-card" class="card-block card-dual">
+          <h2>Experience</h2>
+          <h3><a href="https://canva.link/ac5zz0ibpkim2gb" target="_blank">Link to Résumé >></a></h3>
+        </div>
+        <div class="card-block card-dual" style="align-items: baseline;">
+          <div>
+            <h3>Clinical Systems Assistant</h3>
+            <p>Cebu Genomics</p>
+            <p>2025 – 2029</p>
+          </div>
+          <div>
+            <h3>Skills Used</h3>
+            <ul>
+              <li><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML5 icon from icons8."></li>
+              <li><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS3 icon from icons8."></li>
+              <li><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JS icon from icons8."></li>
+              <li><img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python icon from icons8."></li>
+              <li><img src="https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000" alt="SQL icon from icons8."></li>
+              <li><img src="https://img.icons8.com/?size=100&id=NFkotxJ9LCIp&format=png&color=000000" alt="Medical-history icon from icons8."></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-block">
+          <ul>
+            <li><span class="text-emphasis">Data extraction</span>. Replaced slow, manual entry of genomic data with custom, Python-based scripts for fast parsing and reliable validation.</li>
+            <li><span class="text-emphasis">Quality control (QC) pipelines</span>. Designed automated QC pipelines to flag and validate low-confidence genomic data, ensuring accurate results.</li>
+            <li><span class="text-emphasis">Cross-departmental communicator</span>. Served as the translator between clinical and IT staff by ensuring software met real lab requirements.</li>
+            <li><span class="text-emphasis">Database management</span>. Audited orphaned records, managed secure-data protocols, and engineered <a href="https://bioriskassociationphilippines.org/objectives/" target="_blank">BRAP</a>-compliant backups for sensitive bio-information.</li>
+            <li><span class="text-emphasis">Data privacy</span>. Managed <a href="https://www.cdc.gov/phlp/php/resources/health-insurance-portability-and-accountability-act-of-1996-hipaa.html" target="_blank">HIPAA</a>-related data privacy by coordinating encrypted transfers of sensitive patient data between departments and hospitals.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <h2>Work Samples / Artifacts</h2>
+      <div class="cards">
+
+        <a href="https://youtu.be/EQerq8N2PAE?si=Zw29q46w5b90kWBX" target="_blank">
+          <div class="card">
+            <h3>LIS Data Automation</h3>
+            <p>Tools: Python, SQL</p>
+            <p>Automated low-confidence data (e.g., missing fields, formatting errors) validation and routing, improving accuracy and interpretation of data on site.</p>
+          </div>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=wvTv8TqWC48" target="_blank">
+          <div class="card">
+            <h3>Protein Structure Visualization</h3>
+            <p>Tools: Python</p>
+            <p>Differentiated wild-type and mutated proteins along regions affecting protein function, visualized and annotated.</p>
+          </div>
+        </a>
+          
+        <a href="https://www.youtube.com/watch?v=D7P-LnWBPpw" target="_blank">
+          <div class="card">
+            <h3>Microbiome Diversity Analysis</h3>
+            <p>Tools: Python</p>
+            <p>Processed <b>16S rRNA</b> data from common gut microbiota to generate diversity matrices for comparison and plots.</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+    
+    <section id="studies">
+      <div>
+        <h2>Case Studies</h2>
+      </div>
+      <div class="card">
+        <p>S. Back at Cebu Genomics, our clinical team was manually reading through <i>massive</i> papers of genomic data from legacy sequencing machines. This process was a large bottleneck on efficiency, both being highly prone to human error and delaying report generation by days at a time.</p>
+        <p>T. Develop a new QC pipeline based on a new, up-to-date Python library to parse raw genomic data according to specific control flags. Then: send the data downstream towards the clinical team for analysis.</p>
+        <p>A. I developed a set of custom Python scripts using the Pandas library (known for data manipulation and analysis) to handle the relatively high volumes of data to parse. I wrote in logic, documentation rationalizing each step of said logic (for future technicians), and integrated the new QC pipeline from the bottom-up. Validated data would now be flagged then packaged in multiple JSON and text formats.</p>
+        <p>R. By shifting from manual entry to an automated script, data throughput was at an all-time high in the genomics facility, though QC slowly became the new bottleneck as sensitive sections of data still needed to be checked by live technicians and analysts. Overall, manual processing time appeared to be cut down by over 50%.</p>
+      </div>
+      <div class="card">
+        <p>S. Cebu Genomic's legacy LIS was suffering from a lack of updates and a development cycle that had ended long ago. With each new patient entry, the proportion of "orphaned" records — patient files that reference non-existing data, and vice-versa — was ever-increasing.</p>
+        <p>T. Audit and automate data extraction while keeping the legacy machines stable. Also: ensure the updated system(s) and data back-ups complied with BRAP standards, as per the initial expectations for my hiring.</p>
+        <p>A. In line with this, I conducted a deep-clean of the database by installing auditing systems along a new, improved QC pipeline. I also revised the role-access matrix in the laboratory and established more secure transfer protocols, for the careful sharing sensitive of patient biodata with our top five client-hospitals.</p>
+        <p>R. This initiative improved the overall integrity of the LIS and prepared it for possibly the next five years of the LIS' development cycle. A more robust, secure, and user-friendly Electronic Health Records (EHR) system was thereafter integrated into the facility using the updated LIS backbone, securing compliance with BRAP principles.</p>
+      </div>
+    </section>
+
+    <h2 id="certificate-title">Certificates</h2>
+
+    <section id="certificates">
+      <div class="card-group">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get In Touch!</h2>
+      <p>
+        <img src="https://img.icons8.com/?size=100&id=9729&format=png&color=000000" alt="Phone icon from icons8.">
+        <span>(0912) 900 4265</span>
+        <span>•</span>
+        <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt="Email icon from icons8.">
+        <span>remegio.sagarino@carsu.edu.ph</span>
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const roles = [
+      "scientist",
+      "medical biologist",
+      "full-stack biologist",
+      "clinical informaticist",
+      "clinical bioinformatician",
+    ];
+
+    let swapIndex = 0;
+    function swapRole(button) {
+      let oldWidth = button.offsetWidth;
+      button.style.width = 'auto';
+
+      swapIndex = (swapIndex + 1) % roles.length;
+      button.textContent = roles[swapIndex];
+
+      let newWidth = button.offsetWidth;
+      button.style.width = oldWidth + 'px';
+
+      setTimeout(() => {
+        button.style.width = newWidth + 'px';
+      }, 50);
+    }
+  </script>
+</body>
+</html>
