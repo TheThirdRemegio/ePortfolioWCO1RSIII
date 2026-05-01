@@ -161,13 +161,13 @@ main #hero div p {
   margin-left: 6rem;
   font-family: "Nunito", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-main #hero div p.quote {
+main #hero div p.tagline {
   font-family: "Aleo", helvetica, calibri;
   font-weight: 700;
   font-size: 20px;
   transform: none;
   opacity: 0;
-  animation: fadeIn 1s forwards 6s ease;
+  animation: fadeIn 1s forwards 4.5s ease;
   margin: 4rem 9rem;
   color: rgba(252, 247, 248, 0.8);
 }
@@ -246,7 +246,7 @@ main #about div#about-text img {
 main #experience {
   background-color: #FCF7F8;
   background-image: url("../assets/images/grey-crystals_artempodrez-7232913.jpg");
-  background-size: 150%;
+  background-size: 200%;
   background-position: 50% 0%;
   will-change: background-position, transform;
   display: flex;
@@ -254,8 +254,7 @@ main #experience {
   align-items: center;
   flex-direction: row;
   gap: 2rem;
-  height: 80vh;
-  min-height: 0;
+  min-height: 80vh;
   padding-inline: 2rem;
   margin-bottom: 4rem;
 }
@@ -277,6 +276,9 @@ main #experience > div.card h2 {
 main #experience > div.card div.card-block {
   padding-bottom: 20px;
 }
+main #experience > div.card div.card-block div {
+  align-content: space-between;
+}
 main #experience > div.card div.card-block h3 {
   font-size: 20px;
   text-align: left;
@@ -291,6 +293,7 @@ main #experience > div.card div.card-block p {
 main #experience > div.card div.card-block ul {
   list-style: square;
   padding-inline: 1rem;
+  margin-block: 0;
 }
 main #experience > div.card div.card-block ul li {
   padding-left: 0.2rem;
@@ -330,7 +333,7 @@ main #experience > div.card div.card-block.card-dual {
   flex-direction: row;
   align-items: center;
 }
-main #experience > div.card div.card-block.card-dual h3 {
+main #experience > div.card div.card-block.card-dual div:last-child > h3 {
   text-align: right;
   margin-right: 2rem;
 }
@@ -344,7 +347,7 @@ main #experience > div.card div.card-block.card-dual ul {
 main #experience > div.card div.card-block.card-dual ul li > img {
   height: 60px;
 }
-main #experience > div.card div#experience-card {
+main #experience > div.card div#experience-title {
   padding-bottom: 0;
 }
 main #works {
@@ -438,6 +441,7 @@ main #studies {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-inline: 20%;
 }
 main #studies h2 {
   font-family: "Aleo", helvetica, calibri;
@@ -468,6 +472,10 @@ main #studies div.card p::first-letter {
   text-shadow: 3px 3px 2px #995aa0;
   font-family: "Aleo", helvetica, calibri;
   font-weight: 700;
+}
+main #studies div.card u {
+  -webkit-text-decoration: 2px solid underline #FCF7F8;
+          text-decoration: 2px solid underline #FCF7F8;
 }
 main #studies div.card:nth-child(3) {
   background-color: rgba(153, 90, 160, 0.3);
@@ -502,42 +510,41 @@ main #certificates .card-group .card {
   position: absolute;
   aspect-ratio: 5/7;
   background-color: #727272;
-  height: 550px;
-  border-radius: 15px;
+  height: 500px;
   transition: all 0.5s cubic-bezier(0.05, 0.43, 0.25, 0.95);
 }
 main #certificates .card-group .card:nth-child(1) {
   background-image: url(../assets/images/certificate_brap.jpg);
   background-size: cover;
-  transform: translate(-10%) rotate(-1deg);
+  transform: translate(-30%, 5%) rotate(-5deg);
   z-index: 2;
 }
 main #certificates .card-group .card:nth-child(2) {
   background-image: url(../assets/images/certificate_dost.jpg);
   background-size: cover;
-  aspect-ratio: 7/6;
-  transform: translate(2%) rotate(1deg);
+  aspect-ratio: 7/4.5;
+  transform: translate(10%, -3%) rotate(-2deg);
   z-index: 1;
 }
 main #certificates .card-group .card:nth-child(3) {
   background-image: url(../assets/images/certificate_sfams.jpg);
   background-size: cover;
   aspect-ratio: 16/9;
-  transform: translate(15%) rotate(2deg);
+  transform: translate(5%, 3%) rotate(3deg);
   z-index: 0;
 }
 main #certificates .card-group .card:hover {
-  scale: 1.05 !important;
+  scale: 1.1 !important;
   z-index: 3 !important;
 }
 main #certificates:hover .card-group .card:nth-child(1) {
-  transform: translate(-130%, 12%) rotate(-12.5deg);
+  transform: translate(-140%, 12%) rotate(-12.5deg);
 }
 main #certificates:hover .card-group .card:nth-child(2) {
-  transform: translate(-15%, -5%) rotate(-5deg);
+  transform: translate(-15%, -5%) rotate(-3deg);
 }
 main #certificates:hover .card-group .card:nth-child(3) {
-  transform: translate(28%, 10%) rotate(3.5deg);
+  transform: translate(30%, 5%) rotate(1.5deg);
 }
 main #contact {
   background-image: linear-gradient(180deg, #532658, #1c1c1c);
@@ -563,6 +570,11 @@ main #contact p {
   align-items: center;
   gap: 1rem;
   font-size: 20px;
+}
+main #contact a {
+  color: #FCF7F8;
+  -webkit-text-decoration: 2px wavy underline #995aa0;
+          text-decoration: 2px wavy underline #995aa0;
 }
 
 .video-bg {

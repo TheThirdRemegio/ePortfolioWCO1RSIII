@@ -192,12 +192,12 @@ main {
         margin-left: 6rem;
         font-family: $font-medium;
 
-        &.quote {
+        &.tagline {
           @include strong-text();
           font-size: 20px;
           transform: none;
           opacity: 0;
-          animation: fadeIn 1s forwards 6s ease;
+          animation: fadeIn 1s forwards 4.5s ease;
           margin: 4rem 9rem;
 
           color: rgba($grey-100, 0.8);
@@ -294,7 +294,7 @@ main {
   #experience {
     background-color: $grey-100;
     background-image: url("../assets/images/grey-crystals_artempodrez-7232913.jpg");
-    background-size: 150%;
+    background-size: 200%;
     background-position: 50% 0%;
     will-change: background-position, transform;
     
@@ -303,8 +303,7 @@ main {
     align-items: center;
     flex-direction: row;
     gap: 2rem;
-    height: 80vh;
-    min-height: 0;
+    min-height: 80vh;
     padding-inline: 2rem;
     margin-bottom: 4rem;
     
@@ -325,6 +324,10 @@ main {
 
       div.card-block {
         padding-bottom: 20px;
+
+        div {
+          align-content: space-between;
+        }
         
         h3 {
           font-size: 20px;
@@ -342,6 +345,7 @@ main {
         ul {
           list-style: square;
           padding-inline: 1rem;
+          margin-block: 0;
           
           li {
             padding-left: .2rem;
@@ -388,7 +392,7 @@ main {
           flex-direction: row;
           align-items: center;
 
-          h3 {
+          div:last-child > h3 {
             text-align: right;
             margin-right: 2rem;
           }
@@ -408,7 +412,7 @@ main {
         }
       }
 
-      div#experience-card {
+      div#experience-title {
         padding-bottom: 0;
       }
     }
@@ -498,10 +502,11 @@ main {
     background-image: linear-gradient(180deg, rgba($yellow-500, 1), rgba($yellow-500, .2)), url('../assets/images/starry-night-tree_bertellifotografia-13872357.jpg');
     background-size: cover;
     background-position: 50% 0%;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-inline: 20%;
 
     h2 {
       @include strong-text();
@@ -532,6 +537,10 @@ main {
         color: $purple-100;
         text-shadow: 3px 3px 2px $purple-500;
         @include strong-text();
+      }
+
+      u {
+        text-decoration: 2px solid underline $grey-100;
       }
 
       &:nth-child(3) {
@@ -569,22 +578,21 @@ main {
   
         aspect-ratio: 5 / 7;
         background-color: $grey-500;
-        height: 550px;
-        border-radius: 15px;
+        height: 500px;
         transition: all .5s cubic-bezier(.05, .43, .25, .95);
 
         &:nth-child(1) {
           background-image: url(../assets/images/certificate_brap.jpg);
           background-size: cover;
-          transform: translate(-10%) rotate(-1deg);
+          transform: translate(-30%, 5%) rotate(-5deg);
           z-index: 2;
         }
         
         &:nth-child(2) {
           background-image: url(../assets/images/certificate_dost.jpg);
           background-size: cover;
-          aspect-ratio: 7 / 6;
-          transform: translate(2%) rotate(1deg);
+          aspect-ratio: 7 / 4.5;
+          transform: translate(10%, -3%) rotate(-2deg);
           z-index: 1;
         }
         
@@ -592,12 +600,12 @@ main {
           background-image: url(../assets/images/certificate_sfams.jpg);
           background-size: cover;
           aspect-ratio: 16 / 9;
-          transform: translate(15%) rotate(2deg);
+          transform: translate(5%, 3%) rotate(3deg);
           z-index: 0;
         }
 
         &:hover {
-          scale: 1.05 !important;
+          scale: 1.1 !important;
           z-index: 3 !important;
         }
       }
@@ -607,13 +615,13 @@ main {
       .card-group {
         .card {
           &:nth-child(1) {
-            transform: translate(-130%, 12%) rotate(-12.5deg);
+            transform: translate(-140%, 12%) rotate(-12.5deg);
           }
           &:nth-child(2) {
-            transform: translate(-15%, -5%) rotate(-5deg);
+            transform: translate(-15%, -5%) rotate(-3deg);
           }
           &:nth-child(3) {
-            transform: translate(28%, 10%) rotate(3.5deg);
+            transform: translate(30%, 5%) rotate(1.5deg);
           }
         }
       }
@@ -646,6 +654,11 @@ main {
       gap: 1rem;
 
       font-size: 20px;
+    }
+
+    a {
+      color: $grey-100;
+      text-decoration: 2px wavy underline $purple-500;
     }
   }
 }
