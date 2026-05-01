@@ -87,8 +87,8 @@
           <p>2024</p>
         </div>
       </div>
-      <div class="card">
-        <div id="experience-card" class="card-block card-dual">
+      <div id="experience-card" class="card">
+        <div id="experience-title" class="card-block card-dual">
           <h2>Experience</h2>
           <h3><a href="https://canva.link/ac5zz0ibpkim2gb" target="_blank">Link to Résumé >></a></h3>
         </div>
@@ -130,7 +130,7 @@
           <div class="card">
             <h3>LIS Data Automation</h3>
             <p>Tools: Python, SQL</p>
-            <p>Automated low-confidence data (e.g., missing fields, formatting errors) validation and routing, improving accuracy and interpretation of data on site.</p>
+            <p>Flagged and routed records screened for validation issues (e.g., missing fields, formatting errors). Records were categorically organized into pass, correction, and QC review queues, which leveraged individaul judgment without creating a new bottleneck for in-situ data analysis downstream.</p>
           </div>
         </a>
         
@@ -138,7 +138,7 @@
           <div class="card">
             <h3>Protein Structure Visualization</h3>
             <p>Tools: Python</p>
-            <p>Differentiated wild-type and mutated proteins along regions affecting protein function, visualized and annotated.</p>
+            <p>Differentiated wild-type and mutated protein structures by aligning sequence/structure data and mapping mutations to regions affecting protein function. Annotations and tree-graph visualizations highlighted changes without undermining live data analysis.</p>
           </div>
         </a>
           
@@ -146,7 +146,7 @@
           <div class="card">
             <h3>Microbiome Diversity Analysis</h3>
             <p>Tools: Python</p>
-            <p>Processed <b>16S rRNA</b> data from common gut microbiota to generate diversity matrices for comparison and plots.</p>
+            <p>Finally, Irocessed <b>16S rRNA sequencing data</b>from common gut microbiota to compare diversity metrics across whole groups. Diversity matrices and plots were then generated to support the analysis of the differences of microbial composition and species richness.</p>
           </div>
         </a>
 
@@ -158,16 +158,16 @@
         <h2>Case Studies</h2>
       </div>
       <div class="card">
-        <p>S. Back at Cebu Genomics, our clinical team was manually reading through <i>massive</i> papers of genomic data from legacy sequencing machines. This process was a large bottleneck on efficiency, both being highly prone to human error and delaying report generation by days at a time.</p>
-        <p>T. Develop a new QC pipeline based on a new, up-to-date Python library to parse raw genomic data according to specific control flags. Then: send the data downstream towards the clinical team for analysis.</p>
-        <p>A. I developed a set of custom Python scripts using the Pandas library (known for data manipulation and analysis) to handle the relatively high volumes of data to parse. I wrote in logic, documentation rationalizing each step of said logic (for future technicians), and integrated the new QC pipeline from the bottom-up. Validated data would now be flagged then packaged in multiple JSON and text formats.</p>
-        <p>R. By shifting from manual entry to an automated script, data throughput was at an all-time high in the genomics facility, though QC slowly became the new bottleneck as sensitive sections of data still needed to be checked by live technicians and analysts. Overall, manual processing time appeared to be cut down by over 50%.</p>
+        <p>S. At Cebu Genomics, our clinical workflow relied heavily on the <u>manual reviewing of <i>massive</i> genomic datasets</u> produced by legacy sequencing machines. This meant clinical analysts had to read and interpret large, complex datasets by hand, which not only was consistently prone to human error but also delayed report generation by days at a time... This approach became even more unsustainable as the volume of data increased.</p>
+        <p>T. After weeks of adjusting current parameters, I set out to improve the speed and reliability of the workflow by introducing an <u>automated QC pipeline</u>. By leveraging a non-legacy Python library designed to accomodate huge datasets, only properly validated data would be sent downstream to the clinical team, so they could focus on the interpretation and analysis of data rather than clean-up.</p>
+        <p>A. I used Pandas, a Python library designed for data manipulation and analysis, to <u>parse high-throughput genomic data</u>, according to <i>specific control flags</i>. My approach centered on commuting daily analytical needs to highly customizable parameters with explicit validation rules. To do so, I wrote the logic from the bottom-up with commit history recorded by Git, so I could write documentation rationalizing said logic afterwards (for future technicians). Now, this new system exported validated results in structured formats like JSON, as well as more human-readable text in PDFs, making them easier to integrate in human-centered and machine-run workflows.</p>
+        <p>R. By shifting manual entry over to an automated script, the QC pipeline became more reliable and externally consistent, while altogether being less dependent on individual judgment. While some datasets still required manual review — which made QC itself the next bottleneck to conquer, truthfully — the clinical team was now able to work faster and with greater confidence in the data they received, effectively <u>shortening turnaround times (TAT) for audits and reports by several days a month</u>.</p>
       </div>
       <div class="card">
-        <p>S. Cebu Genomic's legacy LIS was suffering from a lack of updates and a development cycle that had ended long ago. With each new patient entry, the proportion of "orphaned" records — patient files that reference non-existing data, and vice-versa — was ever-increasing.</p>
-        <p>T. Audit and automate data extraction while keeping the legacy machines stable. Also: ensure the updated system(s) and data back-ups complied with BRAP standards, as per the initial expectations for my hiring.</p>
-        <p>A. In line with this, I conducted a deep-clean of the database by installing auditing systems along a new, improved QC pipeline. I also revised the role-access matrix in the laboratory and established more secure transfer protocols, for the careful sharing sensitive of patient biodata with our top five client-hospitals.</p>
-        <p>R. This initiative improved the overall integrity of the LIS and prepared it for possibly the next five years of the LIS' development cycle. A more robust, secure, and user-friendly Electronic Health Records (EHR) system was thereafter integrated into the facility using the updated LIS backbone, securing compliance with BRAP principles.</p>
+        <p>S. Cebu Genomic's legacy LIS systems were suffering from their development cycles having ended ended long ago, resulting in <u>rough integration with modern electronics</u> and <u>a lack of updates</u>. This was especially evident with the growing proportion of "orphaned" records — patient files that reference non-existing data, and vice-versa — that was ever-increasing with each new patient entry.</p>
+        <p>T. I was tasked to improve data extraction by <u>designing a new validation system</u>, albeit one that didn't interfere with legacy system stability. I was also tasked to audit current patient records to remove or revise "orphaned" or null entries. In addition, given my associate membership at BRAP, I was also to ensure all outputs and backups complied with BRAP standards and guidelines.</p>
+        <p>A. Over four months, I <u>manually audited and cleaned legacy records</u> while installing new, automated validation checkpoints ("audit nodes") within the updated QC pipeline to improve data integrity while processing. I also <u>revised the laboratory's role-access matrix</u> to more distinctly segregate the responsibilities of existing roles and expand on new ones, per HR's request. This new matrix also introduced <u>stricter transfer protocols</u> for the careful handling and sharing of sensitive patient biodata with approved partner-hospitals and diagnostic laboratories.</p>
+        <p>R. This initiative <u>improved the overall integrity of the LIS</u>, ideally preparing it for the next five years of the LIS' active development cycle. A more robust, secure, and user-friendly Electronic Health Records (EHR) system was thereafter integrated into the facility using the updated LIS backbone, securing compliance with BRAP principles.</p>
       </div>
     </section>
 
@@ -189,6 +189,10 @@
         <span>•</span>
         <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000" alt="Email icon from icons8.">
         <span>remegio.sagarino@carsu.edu.ph</span>
+      </p>
+      <p>
+        <img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="Github icon from icons8.">
+        <a href="https://github.com/TheThirdRemegio/ePortfolioWCO1RSIII" target="_blank">Github Repository (Code)</a>
       </p>
     </section>
   </main>
